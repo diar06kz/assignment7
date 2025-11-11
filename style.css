@@ -34,6 +34,14 @@ button:hover {
   margin-top: 10px;
 }
 
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative; 
+  margin-top: 10px;
+}
+
 #animateBox, #sequenceBox, #comboBox {
   width: 100px;
   height: 100px;
@@ -42,6 +50,7 @@ button:hover {
   border-radius: 8px;
   position: relative;
 }
+
 
 #gallery {
   display: flex;
