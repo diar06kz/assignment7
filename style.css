@@ -37,9 +37,10 @@ button:hover {
 #box {
   width: 100px;
   height: 100px;
-  background-color: red;
-  position: relative; 
-  margin-top: 10px;
+  background-color: crimson;
+  position: relative;
+  margin: 10px 0;
+  border-radius: 10px;
 }
 
 #animateBox, #sequenceBox, #comboBox {
@@ -69,6 +70,39 @@ button:hover {
 .thumb:hover {
   opacity: 1;
   transform: scale(1.05);
+} 
+.accordion {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+.accordion .header:hover {
+  background-color: #0056b3;
+}
+
+
+.accordion .content {
+  display: none;
+  background: #f4f8ff;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  animation: fadeIn 0.4s ease;
+}
+.accordion .content:last-child {
+  border-bottom: none;
+}
+
+.accordion .header {
+  background-color: #007bff;
+  color: white;
+  margin: 0;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  user-select: none;
 }
 
 #mainImage img {
